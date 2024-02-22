@@ -57,6 +57,6 @@
     margin: 31px 19px 24px 19px;
   }
   .list > *:not(:last-child) {
-    margin: 0 0 -36px 0 !important;
+    margin: 0 0 36px 0 !important;
   }
 }
