@@ -1,0 +1,22 @@
+.about__info {
+  max-width: 552px;
+}
+.about__title {
+  margin: -1px 0 25px 0;
+}
+.about__text > *:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+
+@media (max-width: 375px) {
+  .about__info {
+    max-width: 347px;
+  }
+  .about__title {
+    margin: 32px 0 16px 5px;
+  }
+  .about__text {
+    padding: 0 0 0 5px;
+    max-width: 355px;
+  }
+}

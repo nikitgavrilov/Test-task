@@ -1,0 +1,100 @@
+.header {
+  background-color: #f6f6f6;
+}
+.header__container {
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 96px;
+  padding: 32px 64px;
+}
+.header__author {
+  display: flex;
+  align-items: center;
+}
+.author__logo {
+  margin: 0 23px 0 0;
+}
+.author__logo img {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+.author__info h2 {
+  margin: 9px 0;
+  font-size: 36px;
+}
+.author__info p {
+  color: #6f6f6f;
+  font-size: 24px;
+  line-height: 150%;
+}
+.header__contacts button {
+  width: 267px;
+  height: 64px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  border-radius: 64px;
+
+  transition: all 1s ease 0s;
+}
+.header__contacts button:hover {
+  background-color: #f6f6f6;
+  border: 2px solid #000;
+  color: #000;
+
+  transition: all 0.4s linear 0s;
+}
+.header__contacts button:active {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+
+  transition: all 0.4s linear 0s;
+}
+
+@media (max-width: 892px) {
+  .header__body {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .author__logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .header__contacts button {
+    margin: 24px 0 0 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__body {
+    padding: 40px 20px;
+  }
+  .author__info h2 {
+    font-size: 24px;
+    margin: 0px 44px 6px 0;
+    padding: 7px 0 0 0;
+  }
+  .author__info p {
+    font-size: 16px;
+  }
+  .header__contacts button {
+    width: 335px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 345px) {
+  .header__contacts button {
+    width: 305px;
+    height: 64px;
+  }
+}
